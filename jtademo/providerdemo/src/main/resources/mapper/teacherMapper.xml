@@ -1,0 +1,17 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.providerdemo.mapper.TeacherMapper">
+    <select id="allTeacher" resultType="com.lrw.entity.Teacher">
+        select * from teacher
+    </select>
+    <insert id="save">
+        insert into teacher
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            tid,tname,
+        </trim>
+        <trim prefix="values(" suffixOverrides="," suffix=")">
+            #{tid},#{tName},
+        </trim>
+    </insert>
+</mapper>

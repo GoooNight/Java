@@ -1,0 +1,18 @@
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+server:
+  port: 8089
+spring:
+  application:
+    name: feign-client
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/flower?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    password: 1274531789luo
+    username: root
+tx-lcn:
+  client:
+    manager-address: localhost:5800

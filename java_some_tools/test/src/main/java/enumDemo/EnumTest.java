@@ -1,7 +1,7 @@
 package enumDemo;
 
 /**
- * @Description
+ * @Description 枚举测试类
  * @author:awei
  * @date:2019/8/8
  * @ver:1.0
@@ -9,7 +9,7 @@ package enumDemo;
 public class EnumTest {
     public static void main(String[] args) {
         EnumDemo blue = EnumDemo.BLUE;
-        System.out.println(blue);
+        System.out.println(blue.getName());
     }
 
 }
