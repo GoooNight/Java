@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Shanghai
+    password: 1274531789luo
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: provider01
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+server:
+  port: 8080
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

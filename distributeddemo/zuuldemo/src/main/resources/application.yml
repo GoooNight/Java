@@ -1,0 +1,17 @@
+server:
+  port: 8111
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+spring:
+  application:
+    name: zuul-demo
+zuul:
+  routes:
+    provider01:
+      path: /zuul/**
+      serviceId: provider01
+#      url: http:localhost:8080(provider01)
+#  这个配置不知道为什么，一定要写，好像是切个url时用的
+  servlet-path: /

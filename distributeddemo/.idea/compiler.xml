@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="esdemo" />
+        <module name="distributeddemo" />
+        <module name="eur" />
+        <module name="securitydemo" />
+        <module name="provider" />
+        <module name="zuuldemo" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="esdemo" options="-parameters" />
+      <module name="eur" options="-parameters" />
+      <module name="provider" options="-parameters" />
+      <module name="securitydemo" options="-parameters" />
+      <module name="zuuldemo" options="-parameters" />
+    </option>
+  </component>
+</project>
