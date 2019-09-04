@@ -11,6 +11,7 @@
         <module name="eur" />
         <module name="securitydemo" />
         <module name="provider" />
+        <module name="gatewaydemo" />
         <module name="zuuldemo" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="esdemo" options="-parameters" />
       <module name="eur" options="-parameters" />
+      <module name="gatewaydemo" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="securitydemo" options="-parameters" />
       <module name="zuuldemo" options="-parameters" />

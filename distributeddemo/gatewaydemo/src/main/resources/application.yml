@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: PROVIDER01
+          uri: lb://PROVIDER01
+          predicates:
+            - Path=/gate/**
+          filters:
+            - StripPrefix=1
+    discovery:
+      enabled: true
+  application:
+    name: gate-demo
+server:
+  port: 8112
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
